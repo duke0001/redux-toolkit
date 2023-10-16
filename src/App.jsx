@@ -1,5 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 import "./App.css";
 
@@ -8,10 +10,12 @@ import Buttons from "./components/Slider/Buttons";
 
 export const App: React.FC = () => {
   return (
-    <div className="App">
-      <List />
-      <Buttons />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <List />
+        <Buttons />
+      </div>
+    </Provider>
   );
 };
 
