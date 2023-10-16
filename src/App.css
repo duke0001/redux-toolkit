@@ -1,0 +1,12 @@
+iframe {
+  display: none;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
